@@ -1,0 +1,364 @@
+#image-gallery {
+  width: 25%;
+  height: auto;
+  margin: 0;
+  filter: none;
+  position: absolute;
+  top: 6%;
+  left: 38%;
+}
+
+#mySlides {
+  /* width: 100%; */
+  padding: 0;
+  background-color: aliceblue;
+  box-shadow: gray 0px 4px 12px;
+}
+#carousel {
+  width: 100%;
+  /* height: 30%; */
+  /* z-index: 1; */
+  position: relative;
+  background: radial-gradient(rgb(245, 245, 60), rgb(182, 0, 0));
+  margin: 1%;
+  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.5);
+}
+
+.carousel > #caru-img {
+  border: 2px solid red;
+  filter: grayscale(80%);
+}
+
+.News {
+  margin: 1em;
+  margin-top: 0;
+  padding: 1em;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.news-cont {
+  margin: 3em;
+  margin-bottom: 0;
+  /* margin-top: 0; */
+  padding: 1em;
+  text-align: center;
+  z-index: 1;
+  /* box-shadow: 6px -6px 6px rgba(0, 0, 0, 0.5); */
+}
+
+.News > div:hover {
+  transform: scale(1.2);
+}
+.News > div > p {
+  margin: 1.2em;
+  text-align: justify;
+}
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  transition: background-color 0.6s ease;
+  border-radius: 50%;
+  opacity: 0.8;
+}
+
+.next {
+  right: -30px;
+}
+
+.prev {
+  left: -30px;
+}
+
+-- > .prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.images {
+  width: 100%;
+  height: 100%;
+}
+
+main {
+  margin: 0;
+  padding: 0;
+}
+
+article:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.sales {
+  margin: 1em;
+  padding: 1em;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* border: 2px solid green; */
+  align-items: center;
+  justify-items: center;
+}
+
+.sale-cont {
+  margin: 3em;
+  margin-top: 1%;
+  margin-left: 10em;
+  margin-right: 10em;
+  padding: 1em;
+  text-align: center;
+  /* border: 2px solid blue; */
+  /* min-height: 80rem; */
+}
+
+.mySales {
+  position: relative;
+  /* border: 2px solid red; */
+  width: 20rem;
+}
+.mySales img {
+  width: 20rem;
+  height: auto;
+}
+/* .sales>div:hover{
+    border: 2px solid yellow;
+  } */
+.sales > div:hover .images {
+  /* transform: scale(1.1); */
+  /* filter: grayscale(100%); */
+  filter: blur(4px);
+  /* opacity: 0.9; */
+}
+
+/* .invisible{
+    visibility: collapse;
+    position: absolute;
+    color: white;
+    top: 50%;
+    right: 50%;
+  } */
+.invisible {
+  position: absolute;
+  top: 25%;
+  left: 10%;
+  color: white;
+  background-color: rgba(78, 78, 78, 0.39);
+  /* visibility: collapse; */
+  opacity: 0;
+  padding: 20px;
+  transition: opacity 0.3s ease;
+  /* Ensures the hidden section doesn't interfere with hover */
+}
+.sales > div:hover > .invisible {
+  /* visibility: visible; */
+  opacity: 1;
+}
+.invisible button {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid white;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for the button */
+.invisible button:hover {
+  background-color: #ffffffb0;
+}
+
+@media screen and (max-width: 1280px) {
+  .sales {
+    margin: 1em;
+    padding: 1em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-items: center;
+  }
+
+  .News {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sale-cont {
+    margin: 2em;
+    padding: 1em;
+    text-align: center;
+
+    /* min-height: 80rem; */
+  }
+
+  .sales > div .images {
+    filter: blur(4px);
+  }
+
+  .sales > div > .invisible {
+    /* visibility: visible; */
+    opacity: 1;
+    height: auto;
+    width: 10rem;
+  }
+
+  .invisible {
+    top: 5rem;
+    left: 5rem;
+  }
+
+  .news-cont {
+    margin: 1em;
+  }
+  .prev,
+  .next {
+    top: 20%;
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  /* STEP 4: INSIDE the newly-created @media rule, add a rule for the MAIN element that restores the flex-box to flex-direction: row */
+  .News {
+    padding: 0.7em;
+  }
+  .sales,
+  .News {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sale-cont {
+    margin: 2em;
+    padding: 1em;
+    text-align: center;
+    /* min-height: 80rem; */
+  }
+
+  .mySales img {
+    width: 13rem;
+    height: auto;
+  }
+
+  .mySales {
+    width: 13rem;
+  }
+
+  .sales > div .images {
+    filter: blur(4px);
+  }
+
+  .sales > div > .invisible {
+    /* visibility: visible; */
+    opacity: 1;
+    height: auto;
+    width: 10rem;
+  }
+
+  .invisible {
+    top: 3rem;
+    left: 2rem;
+  }
+
+  .news-cont {
+    margin: 1em;
+  }
+
+  .prev,
+  .next {
+    top: 20%;
+    width: auto;
+  }
+
+  /* STEP 5a: Continue inside the above @media rule, to add a rule for MAIN SECTION that sets the flex-basis to 60% */
+
+  /* STEP 5b: Add another rule for MAIN ASIDE, that restores the width to 40%, and the padding-left to 0 - try it out - your layout is now RESPONSIVE (to some degree)! What other parts of the layout should change to adapt to the user's screen size? */
+  h1 {
+    font-size: 1.5em;
+  }
+
+  ul > li {
+    font-size: 0.7em;
+  }
+
+  /* h2 {
+            font-size: 1.6em;
+          }
+     */
+  h4 {
+    font-size: 1em;
+  }
+
+  p {
+    font-size: 0.7em;
+  }
+
+  footer {
+    font-size: 0.5em;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .mySales img {
+    width: 10rem;
+    height: auto;
+  }
+
+  .mySales {
+    width: 10rem;
+  }
+
+  .invisible {
+    top: 1rem;
+    left: 0;
+    padding: 0.5em;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .invisible > h1 {
+    font-size: 1em;
+    padding: 0;
+  }
+
+  .invisible > p {
+    font-size: 0.5em;
+    padding: 0;
+  }
+
+  .invisible button {
+    padding: 0.5em;
+    margin: 0.3em;
+    width: 3em;
+    height: auto;
+    font-size: 0.7em;
+  }
+  .sale-cont {
+    padding: 0;
+    margin: 0;
+    margin-top: 1em;
+    /* width: 10rem; */
+  }
+  .sales {
+    padding: 0;
+    margin: 0;
+  }
+  .news-cont {
+    padding: 0;
+  }
+  .News {
+    margin: 0;
+  }
+  .container {
+    padding: 1em;
+  }
+}

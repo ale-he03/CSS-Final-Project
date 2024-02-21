@@ -1,0 +1,43 @@
+button {
+  font-weight: bold;
+  padding: 10px 20px;
+  font-size: 20px;
+  background-color: #e8277e;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+button:hover {
+  color: #e8277e;
+  background-color: white;
+}
+
+h1,
+h3 {
+  text-align: center;
+}
+
+#thank-you-message {
+  display: none;
+  font-size: 24px; /* Set the font size */
+  font-weight: bold; /* Make the text bold */
+}
+
+#wju {
+  text-align: center;
+}
+
+.contact-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 1978px) {
+  main {
+    display: contents;
+  }
+}

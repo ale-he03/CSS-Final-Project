@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="images/Diamond_Dogs.svg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/about.css" />
+    <title>Diamond Dogs | About</title>
+  </head>
+  <body>
+    <!-- Header section -->
+    <header>
+      <div class="banner">
+        <a class="navbar-brand" href="index.html"
+          ><img src="images/Diamond_Dogs.svg" alt="header logo" width="160"
+        /></a>
+      </div>
+      <h1>About us</h1>
+      <!-- Navigation menu -->
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Shop</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Main content -->
+    <main>
+      <!-- Contact details -->
+      <div class="contact-info">
+        <p><b>Contact Us:</b> Diamond Dogs</p>
+        <p><b>E-mail:</b> diamond_dogs@gmail.com</p>
+        <p><b>E-mail:</b> diamond_dogsvice@gmail.com</p>
+      </div>
+
+      <!-- Our Mission section -->
+      <div class="container">
+        <h1>Our Mission</h1>
+        <br />
+        <p>
+          At Diamond Dogs, our mission is to unearth the rarest and most
+          powerful monster cards in the vast world of Ragnarok Online. As a
+          top-tier guild of elite players, we embark on daring quests to conquer
+          challenging maps, defeat formidable MVPs, and capture the essence of
+          mythical creatures.
+          <br /><br />
+          Through our website, we extend an invitation to fellow adventurers and
+          collectors to partake in the spoils of our epic journeys. Explore our
+          curated collection of rare monster cards, each one a testament to our
+          guild's skill, strategy, and indomitable spirit.
+          <br /><br />
+          These coveted monster cards are not merely collectibles—they are keys
+          to unlocking unparalleled power. Enhance your equipment and amplify
+          your strength by harnessing the unique attributes of these rare cards.
+          Join us in celebrating the thrill of the hunt and the allure of
+          legendary monsters. Your journey into the realm of Ragnarok begins
+          here, where every card tells a story of triumph and the relentless
+          pursuit of greatness.
+        </p>
+      </div>
+
+      <!-- Container for company sections -->
+      <div class="container">
+        <!-- Join Our Team section -->
+        <h1>Join the Diamond Dogs!</h1>
+        <br />
+        <p>
+          Join our ranks and contribute to the legacy of Diamond Dogs. We are
+          actively seeking skilled adventurers of level 90 and above,
+          specializing in transcendent classes like Paladins and High Priests.
+          Their unique abilities are crucial in enhancing our capacity to
+          conquer the most challenging encounters and unearth the rarest monster
+          cards.
+        </p>
+        <br /><br />
+
+        <h2>Want to talk to us?</h2>
+        <p>
+          Want to talk to us or need some support with the purchases or website?
+        </p>
+        <br />
+        <div class="feedback-section">
+          <div>
+            <form>
+              <label for="name">Name:</label><br />
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your name here!"
+                required
+              /><br /><br />
+              <label for="email">Email:</label><br />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Your e-mail here!"
+                required
+              /><br /><br />
+              <label for="message">Message:</label><br />
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Talk to us!"
+                rows="4"
+                cols="25"
+                required
+              ></textarea
+              ><br /><br />
+              <button type="button" onclick="displayThankYouMessage(event)">
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <div id="thank-you-message" style="display: none">
+          <p>Thank you for your message!, We will get back with you soon!</p>
+        </div>
+      </div>
+      <!-- JS for button -->
+      <script>
+        function submitForm() {
+          var form = document.getElementById("contact-form");
+          var thankYouMessage = document.getElementById("thank-you-message");
+
+          form.style.display = "none"; // Hide the form
+          thankYouMessage.style.display = "block"; // Show the thank you message
+
+          // Reset the form after a certain delay
+          setTimeout(function () {
+            form.style.display = "block"; // Show the form again
+            thankYouMessage.style.display = "none"; // Hide the thank you message
+          }, 5000); // Display form after 5 seconds
+        }
+      </script>
+
+      <div class="container">
+        <section>
+          <h1>Current Guild Openings!</h1>
+          <br />
+          <p>
+            We're looking for individuals who are passionate about Ragnarok
+            Online.<br />
+            Take a look at who we are looking for today, to add to our guild!
+          </p>
+          <br />
+          <ul>
+            <li>
+              <h2>Paladin</h2>
+              <p>
+                We're seeking a PALADIN to contribute to the defence lines of
+                our Ranks, who can REALLY take bosses hits and survive!
+              </p>
+              <br />
+              <h4>Requirements</h4>
+              <p>Level 90+</p>
+              <p>VIT: 90</p>
+              <p>TANK BUILD SKILLS!</p>
+              <p>
+                <img
+                  src="images/Paladin.png"
+                  alt="add paladin in game image here!"
+                  width="141.6"
+                  height="133.2"
+                />
+              </p>
+            </li>
+            <li>
+              <h2>High Priest</h2>
+              <p>
+                We're in search of a HIGH PRIEST to bolster the support lines of
+                our Ranks, who are capable of making a difference by analyzing
+                situations, saving players lives, and, of course, applying a
+                full array of buffs to prepare everybody for the tough battles
+                ahead!
+              </p>
+              <br />
+              <h4>Requirements</h4>
+              <p>Level 90+</p>
+              <p>ALL THE BUFFS AND SUPPORT SKILLS!</p>
+              <p>
+                <img
+                  src="images/High_Priest.png"
+                  alt="add paladin in game image here!"
+                  width="141.6"
+                  height="133.2"
+                />
+              </p>
+            </li>
+          </ul>
+        </section>
+        <br /><br />
+        <section>
+          <h1>Why Join Us?</h1>
+          <br />
+          <p>
+            In our pursuit of treasures, all other drops will be distributed
+            among our members. Initially, we focus on ensuring that items go to
+            those who can make the best use of them. The division process starts
+            by identifying players who genuinely need and can benefit from the
+            items. As for the distribution of profits, luck plays a role
+            initially, and then we eliminate participants who haven't received
+            items yet. However, the value of items and their significance to
+            strengthening our hunters is always considered. Monster cards, in
+            particular, are prioritized for our hunters as essential upgrades to
+            their gear.
+            <br /><br />
+            Any extra monster cards we acquire during our adventures are made
+            available for sale through our website, contributing to the guild's
+            prosperity and funding future endeavors. Join us in this adventure,
+            where teamwork and strategic distribution ensure not only individual
+            success but the collective triumph of Diamond Dogs.
+          </p>
+          <br />
+          <p id="wju">
+            <img
+              src="images/Diamond_Dogs.svg"
+              alt="add paladin in game image here!"
+              width="160"
+            />
+          </p>
+        </section>
+      </div>
+
+      <div class="container">
+        <h2>OUR GUILD MEMBERS</h2>
+        <br />
+        <p><b>Guild Leader:</b> André Anu B. Martins</p>
+        <p><b>Head of Treasury:</b> Alejandra Hernandez</p>
+        <p><b>Head of Army:</b> Hidetoshi Okada</p>
+      </div>
+    </main>
+
+    <!-- Footer section -->
+    <footer>
+      <p>
+        <a href="index.html">
+          <img
+            src="images/Diamond_Dogs.svg"
+            alt="add paladin in-game image here!"
+            width="60"
+          />
+        </a>
+      </p>
+      <!-- Navigation links in the footer -->
+      <nav>
+        <a href="contact.html" title="Read our Privacy Policy">Contact</a>
+        | <a href="about.html" title="Contact Support">About Us</a><br />
+        💎 Diamond Dogs 💎
+      </nav>
+    </footer>
+    <script src="script/carousel.js"></script>
+  </body>
+</html>

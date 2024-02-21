@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diamond Dogs</title>
+    <!-- Title of the website -->
+    <link
+      rel="shortcut icon"
+      href="images/Diamond_Dogs.svg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body>
+    <header>
+      <div class="banner">
+        <a class="navbar-brand" href="index.html"
+          ><img src="images/Diamond_Dogs.svg" alt="header logo" width="160"
+        /></a>
+      </div>
+      <h1>Diamond Dogs</h1>
+      <!-- Navigation menu -->
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Shop</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- Slide show container -->
+      <div id="carousel">
+        <img src="images/pattern1.png" class="images img-main" />
+        <!-- <img src="images/pattern4.jpg" class="images img-main"> -->
+
+        <div id="image-gallery">
+          <div class="mySlides">
+            <img src="images/caru1.png" class="images" alt="carousel-img1">
+          </div>
+          <div class="mySlides">
+            <img src="images/sales1.png" class="images" alt="carousel-img2">
+          </div>
+          <div class="mySlides">
+            <img src="images/caru.png" class="images" alt="carousel-img3">
+          </div>
+          <div class="mySlides">
+            <img src="images/caru3.png" class="images" alt="carousel-img4">
+          </div>
+          <div class="mySlides">
+            <img src="images/caru4.png" class="images" alt="carousel-img5">
+          </div>
+          <div class="mySlides">
+            <img src="images/caru5.png" class="images" alt="carousel-img6">
+          </div>
+          <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <a class="next" onclick="plusSlides(1)">❯</a>
+        </div>
+      </div>
+
+      <div class="news-cont">
+        <h1>News</h1>
+        <div class="News">
+          <div class="container">
+            <h4>Level Up: WarpPortal’s Point Stuffing Spectacular is Here!</h4>
+            <p>
+              Get ready to stuff your gaming experience full of bonuses with
+              WarpPortal’s Point-Stuffing Spectacular! November 23rd to 29th:
+              Level up your points purchases
+            </p>
+          </div>
+          <div class="container">
+            <h4>Generation Zombie CBT Just Launched!</h4>
+            <p>
+              Generation Zombie just launched a 2 week CBT (beta test), from
+              September 14 to 28 (US PDT)! Players across the globe can head to
+              the Google Play Store to download and play the game for free on
+              Android devices.
+            </p>
+          </div>
+          <div class="container">
+            <h4>Ragnarok Origin 4th Class Update</h4>
+            <p>
+              Greetings, Midgardians! Prepare yourselves for an epic adventure
+              as Ragnarok Origin unveils an exciting new chapter in its
+              legendary saga. We are thrilled to announce the arrival of not
+              one, not two, but six brand-new 4th classes that will forever
+              change the face of Midgard
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="sale-cont">
+        <h1>Sales</h1>
+        <div class="sales">
+          <div class="mySales">
+            <img src="images/sales1.png" class="images" />
+            <div class="invisible">
+              <p>Only for today get a 20% off</p>
+              <p><i>3400$</i> | <b>NOW</b> 2720$</p>
+              <h1>Buy It Now!</h1>
+              <button type="button" onclick="buybutton()">BUY</button>
+            </div>
+          </div>
+          <div class="mySales">
+            <img src="images/sales2.png" class="images" alt="sales-img1" />
+            <div class="invisible">
+              <div class="buyThanks">
+                <p>Only for today get a 20% off</p>
+                <p><i>$9</i> | <b>NOW</b> $7.20</p>
+                <h1>Buy It Now!</h1>
+                <button type="button" onclick="buyThanks(event)">BUY</button>
+              </div>
+            </div>
+          </div>
+          <div class="mySales">
+            <img src="images/sales3.png" class="images" alt="sales-img2" />
+            <div class="invisible">
+              <p>Only for today get a 30% off</p>
+              <p><i>$6</i> | <b>NOW</b> $4.2</p>
+              <h1>Buy It Now!</h1>
+              <button type="button" onclick="buybutton()">BUY</button>
+            </div>
+          </div>
+          <div class="mySales">
+            <img src="images/sales4.png" class="images" alt="sales-img3" />
+            <div class="invisible">
+              <p>Only for today get a 15% off</p>
+              <p><i>$5</i> | <b>NOW</b> $4.25$</p>
+              <h1>Buy It Now!</h1>
+              <button type="button" onclick="buybutton()">BUY</button>
+            </div>
+          </div>
+          <div class="mySales">
+            <img src="images/sales5.png" class="images" alt="sales-img4" />
+            <div class="invisible">
+              <p>Only for today get a 25% off</p>
+              <p><i>7$</i> | <b>NOW</b> 5.25$</p>
+              <h1>Buy It Now!</h1>
+              <button type="button" onclick="buybutton()">BUY</button>
+            </div>
+          </div>
+          <div class="mySales">
+            <img src="images/sales6.png" class="images" />
+            <div class="invisible">
+              <p>Only for today get a 30% off</p>
+              <p><i>8$ </i> | <b>NOW</b> 5.60$</p>
+              <h1>Buy It Now!</h1>
+              <button type="button" onclick="buybutton()">BUY</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>
+        <a href="index.html">
+          <img
+            src="images/Diamond_Dogs.svg"
+            alt="add paladin in-game image here!"
+            width="60"
+          />
+        </a>
+      </p>
+      <!-- Navigation links in the footer -->
+      <nav>
+        <a href="contact.html" title="Read our Privacy Policy">Contact</a>
+        | <a href="about.html" title="Contact Support">About Us</a><br />
+        💎 Diamond Dogs 💎
+      </nav>
+    </footer>
+    <script src="script/carousel.js"></script>
+    <!-- <script src="script/feedback.js"></script> -->
+  </body>
+</html>

@@ -1,0 +1,13 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+footer {
+  margin-top: auto;
+}
+
+.container {
+  box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.5);
+}

@@ -1,0 +1,842 @@
+<!-- COMP1054 Interface Design Using CSS
+*	@author Hidetoshi O:
+*	December 15, 2023:
+*	23:59:
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- meta data -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diamond Dogs | Card Collection</title>
+    <meta name="author" content="Hidetoshi Okada" >
+    <meta name="description" content="Main Project -SellingOut!-">
+    <!-- link for Favicon -->
+    <link rel="shortcut icon" href="images/Diamond_Dogs.svg" type="image/x-icon" >
+    <!-- link for css -->
+    <link rel= "stylesheet" href="css/styles.css" >
+    <link rel= "stylesheet" href="css/products.css" >
+</head>
+<body>
+    <header>
+        <div class="banner">
+          <a class="navbar-brand" href="index.html"><img src="images/Diamond_Dogs.svg" alt="header logo" width="160"></a>
+        </div>
+        <h1>Card Collection</h1>
+        <!-- Navigation menu -->
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Shop</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">About Us</a></li>
+          </ul>
+        </nav>
+    </header>
+    <!-- featured card on the top, and followed by three columns grid -->
+    <!-- each part has price, buy-button, explanation, and table  -->
+    <main class="grid-container">
+        <article class="featured">
+            <img src="images/4263.png" alt="Incantation Samurai Card" id="main-image">
+            <div>
+                <h1> - Featured Card of the Week - </h1>
+                <h2>INCANTATION-SAMURAI<span class="price">&nbsp;&nbsp;$5,990</span></h2>
+                <button class="buy-button" type="button" onclick="buybutton()">Buy Now !</button>
+                <p> </p>
+                <ul class = "specs">
+                    <li>Physical attacks ignore the defense of normal monsters and players.</li>
+                    <li>Disables the user's natural HP recovery.</li>
+                    <li>Drains 666 HP from the user every 10 seconds.</li>
+                    <li>Drains 999 HP from the user when the weapon is unequipped.</li>
+                </ul>
+                <table>
+                    <tr>
+                        <th>Type</th>
+                        <td>MVP Card</td>
+                    </tr>
+                    <tr>
+                        <th>Subtype</th>
+                        <td>Weapon</td>
+                    </tr>
+                    <tr>
+                        <th>Weight</th>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <th>Required Level</th>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <th>Adjective</th>
+                        <td>Bloodlust</td>
+                    </tr>
+                </table>
+            </div>
+        </article>
+        
+        <article>
+            <img src="images/4145.png" alt="Beelzebub Card">
+            <div>
+                <h3>OBEELZEBUB<span class="price">&nbsp;$4,200</span></h3>
+                <button class="buy-button" type="button" onclick="buybutton()">Buy Now !</button>
+                <p> </p>
+                <ul class = "specs">
+                    <li>Reduces the variable cast time of skills by 30%.</li>
+                </ul>
+                <table>
+                    <tr>
+                        <th>Type</th>
+                        <td>MVP Card</td>
+                    </tr>
+                    <tr>
+                        <th>Subtype</th>
+                        <td>Accessory</td>
+                    </tr>
+                    <tr>
+                        <th>Weight</th>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <th>Required Level</th>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <th>Adjective</th>
+                        <td>of Bigmouth</td>
+                    </tr>
+                </table>
+            </div>
+        </article>
+
+        <article>
+            <img src="images/4218.png" alt="Succubus Card">
+            <div>
+                <h3>SUCCUBUS<span class="price">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$7.20</span></h3>     
+                <button class="buy-button" type="button" onclick="buybutton()">Buy Now !</button>
+                <p> </p>
+                <ul class = "specs">
+                    <li>Set bonus with Incubus Card:</li>
+                    <li>Vit +4</li>
+                    <li>Int +4</li>
+                    <li>HP Recovery Rate +30%</li>
+                    <li>SP Recovery Rate +30%</li>
+                </ul>
+                <table>
+                    <tr>
+                        <th>Type</th>
+                        <td>Normal Card</td>
+                    </tr>
+                    <tr>
+                        <th>Subtype</th>
+                        <td>Armor</td>
+                    </tr>
+                    <tr>
+                        <th>Weight</th>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <th>Required Level</th>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <th>Adjective</th>
+                        <td>Nightmarish</td>
+                    </tr>
+                </table>
+            </div>
+        </article>
+
+        <article>
+            <img src="images/4276.png" alt="Lord of Death Card">
+            <div>
+                <h3>LORD OF DEATH<span class="price">&nbsp;&nbsp;$4,380</span></h3>
+                <button class="buy-button" type="button" onclick="buybutton()">Buy Now !</button>
+                <p> </p>
+                <ul class = "specs">
+                    <li>Adds a 5% chance of inflicting [Bleeding], [Curse], [Poison], [Silence] and [Stun] on the target when doing a melee attack.</li>
+                    <li>Adds a 0.01% chance of inflicting [Coma] on the target when doing a physical attack.</li>
+                </ul>
+                <table>
+                    <tr>
+                        <th>Type</th>
+                        <td>MVP Card</td>
+                    </tr>
+                    <tr>
+                        <th>Subtype</th>
+                        <td>Weapon</td>
+                    </tr>
+                    <tr>
+                        <th>Weight</th>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <th>Required Level</th>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <th>Adjective</th>
+                        <td>Crucial</td>
+                    </tr>
+                </table>
+            </div>
+        </article>
+
+        <article>
+            <img src="images/4208.png" alt="Miyabi Ningyo Card">
+            <div>
+                <h3>MIYABI NINGYO<span class="price">&nbsp;&nbsp;$4.25</span></h3>           
+                <button class="buy-button" type="button" onclick="buybutton()">Buy Now !</button>
+                <p> </p>
+                <ul class = "specs">
+                    <li>Set bonus with Loli Ruri Card, Evil Nymph Card, Parasite Card, Harpy Card, Bloody Butterfly Card:</li>   
+                    <li>Def +5</li>
+                    <li>MDef +5</li>
+                    <li>Max HP +500</li>
+                    <li>Increases the damage inflicted with [Fire Bolt], [Cold Bolt] and [Lightning Bolt] by 10%.</li>
+                </ul>
+                <table>
+                    <tr>
+                        <th>Type</th>
+                        <td>Normal Card</td>
+                    </tr>
+                    <tr>
+                        <th>Subtype</th>
+                        <td>Footgear</td>
+                    </tr>
+                    <tr>
+                        <th>Weight</th>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <th>Required Level</th>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <th>Adjective</th>
+                        <td>Energetic</td>
+                    </tr>
+                </table>
+            </div>
+        </article>
+
+        <article>
+            <img src="images/4176.png" alt="Dullahan Card">
+            <div>
+                <h3>DULLAHAN<span class="price">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$10</span></h3>
+                <button class="buy-button" type="button" onclick="buybutton()">Buy Now !</button>
+                <p> </p>
+                <ul class = "specs">
+                    <li>Gives a Crit +7 bonus when attacking [Dragon] race targets.</li>
+                    <li>Increases critical attack damage by 10%.</li>
+                </ul>
+                <table>
+                    <tr>
+                        <th>Type</th>
+                        <td>Normal Card</td>
+                    </tr>
+                    <tr>
+                        <th>Subtype</th>
+                        <td>Weapon</td>
+                    </tr>
+                    <tr>
+                        <th>Weight</th>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <th>Required Level</th>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <th>Adjective</th>
+                        <td>Fatal Serpentine/td>
+                    </tr>
+                </table>
+            </div>
+        </article>
+
+        <article>
+            <img src="images/4419.png" alt="Ktullanux Card">
+            <div>
+                <h3>KTULLANUX<span class="price">&nbsp;&nbsp;$2,720</span></h3>
+                <button class="buy-button" type="button" onclick="buybutton()">Buy Now !</button>
+                <p> </p>
+                <ul class = "specs">
+                    <li>Increases physical damage against [Fire] element targets by 50%.</li>
+                    <li>Adds a 2% chance of using [Frost Nova] Lv .10 on the attacker when attacked.</li>
+                </ul>
+                <table>
+                    <tr>
+                        <th>Type</th>
+                        <td>MVP Card</td>
+                    </tr>
+                    <tr>
+                        <th>Subtype</th> 
+                        <td>Armor</td>
+                    </tr>
+                    <tr>
+                        <th>Weight</th>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <th>Required Level</th>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <th>Adjective</th>
+                        <td>	Jack Frost's</td>
+                    </tr>
+                </table>
+            </div>
+        </article>
+
+        <article>
+            <img src="images/4168.png" alt="Dark Lord Card">
+            <div>
+                <h3>DARK LORD<span class="price">&nbsp;&nbsp;&nbsp;$4,990</span></h3>
+                <button class="buy-button" type="button" onclick="buybutton()">Buy Now !</button>
+                <p> </p>
+                <ul class = "specs">
+                    <li>Set bonus with Dark Illusion Card:</li>
+                    <li>Max HP +20%
+                    <li>Max SP +20%</li>
+                    <li>Reduces the variable cast time of skills by 10%.</li>
+                </ul>
+                <table>
+                    <tr>
+                        <th>Type</th>
+                        <td>MVP Card</td>
+                    </tr>
+                    <tr>
+                        <th>Subtype</th>
+                        <td>Footgear</td>
+                    </tr>
+                    <tr>
+                        <th>Weight</th>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <th>Required Level</th>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <th>Adjective</th>
+                        <td>of Doom</td>
+                    </tr>
+                </table>
+            </div>
+        </article>
+
+        <article>
+            <img src="images/4230.png" alt="Shinobi Card">
+            <div>
+                <h3>SHINOBI<span class="price">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$5.60</span></h3>
+                <button class="buy-button" type="button" onclick="buybutton()">Buy Now !</button>
+                <p> </p>
+                <ul class = "specs">
+                    <li>Adds a 10% chance of using [Cloaking] of the highest level known (to a maximum of level 5) when physically attacked. If [Cloaking] is not learned, level 1 is used instead.</li>
+                </ul>
+                <table>
+                    <tr>
+                        <th>Type</th>
+                        <td>Normal Card</td>
+                    </tr>
+                    <tr>
+                        <th>Subtype</th>
+                        <td>Accessory</td>
+                    </tr>
+                    <tr>
+                        <th>Weight</th>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <th>Required Level</th>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <th>Adjective</th>
+                        <td>Coward's</td>
+                    </tr>
+                </table>
+            </div>
+        </article>
+
+        <article>
+            <img src="images/4352.png" alt="Ygnizem Senior Card">
+            <div>
+                <h3>YGNIZEM SENIOR<span class="price">&nbsp;$2,500</span></h3>
+                <button class="buy-button" type="button" onclick="buybutton()">Buy Now !</button>
+                <p> </p>
+                <ul class = "specs">
+                    <li>Restores 50 HP and 10 SP to the user every 10 seconds.</li>
+                </ul>
+                <table>
+                    <tr>
+                        <th>Type</th>
+                        <td>MVP Card</td>
+                    </tr>
+                    <tr>
+                        <th>Subtype</th>
+                        <td>Footgear</td>
+                    </tr>
+                    <tr>
+                        <th>Weight</th>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <th>Required Level</th>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <th>Adjective</th>
+                        <td>of Regeneration</td>
+                    </tr>
+                </table>
+            </div>
+        </article>
+
+        <article>
+            <img src="images/4140.png" alt="Knight of Abyss Card">
+            <div>
+                <h3>KNIGHT OF ABYSS<span class="price">&nbsp;&nbsp;$60</span></h3>
+                <button class="buy-button" type="button" onclick="buybutton()">Buy Now !</button>
+                <p> </p>
+                <ul class = "specs">
+                    <li>Set bonus with Lord of the Dead Helm [1]:
+                        Increases physical damage on [Boss] monsters by an additional 5%.
+                        If Lord of the Dead Helm is upgraded to +11, negates the additional damage from normal Monsters and Players.</li>
+                </ul>
+                <table>
+                    <tr>
+                        <th>Type</th>
+                        <td>Normal Card</td>
+                    </tr>
+                    <tr>
+                        <th>Subtype</th>
+                        <td>Weapon</td>
+                    </tr>
+                    <tr>
+                        <th>Weight</th>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <th>Required Level</th>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <th>Adjective</th>
+                        <td>Liberation</td>
+                    </tr>
+                </table>
+            </div>
+        </article>
+
+        <article>
+            <img src="images/4170.png" alt="Dark Frame Card">
+            <div>
+                <h3>DARK FRAME<span class="price">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$10</span></h3>
+                <button class="buy-button" type="button" onclick="buybutton()">Buy Now !</button>
+                <p> </p>
+                <ul class = "specs">
+                    <li>dds a 6% chance of inflicting [Stone Curse] on the attacker when physically attacked.</li>
+                </ul>
+                <table>
+                    <tr>
+                        <th>Type</th>
+                        <td>Normal Card</td>
+                    </tr>
+                    <tr>
+                        <th>Subtype</th>
+                        <td>Armor</td>
+                    </tr>
+                    <tr>
+                        <th>Weight</th>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <th>Required Level</th>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <th>Adjective</th>
+                        <td>Solidifying</td>
+                    </tr>
+                </table>
+            </div>
+        </article>
+
+        <article>
+            <img src="images/4172.png" alt="The Paper Card">
+            <div>
+                <h3>THE PAPER<span class="price">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$120</span></h3>
+                <button class="buy-button" type="button" onclick="buybutton()">Buy Now !</button>
+                <p> </p>
+                <ul class = "specs">
+                    <li>Increases critical attack damage by 20%.</li>
+                    <li>Drains 1 SP from the user when physically attacking.</li>
+                </ul>
+                <table>
+                    <tr>
+                        <th>Type</th>
+                        <td>Normal Card</td>
+                    </tr>
+                    <tr>
+                        <th>Subtype</th>
+                        <td>Weapon</td>
+                    </tr>
+                    <tr>
+                        <th>Weight</th>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <th>Required Level</th>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <th>Adjective</th>
+                        <td>Slicing</td>
+                    </tr>
+                </table>
+            </div>
+        </article>
+
+        <article>
+            <img src="images/4209.png" alt="Violy Card">
+            <div>
+                <h3>VIOLY<span class="price">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$10</span></h3>
+                <button class="buy-button" type="button" onclick="buybutton()">Buy Now !</button>
+                <p> </p>
+                <ul class = "specs">
+                    <li>Adds a 2% chance of using [Unbarring Octave] Lv .1, or Lv 5 if learned by the user, when doing a physical attack.</li>
+                </ul>
+                <table>
+                    <tr>
+                        <th>Type</th>
+                        <td>Normal Card</td>
+                    </tr>
+                    <tr>
+                        <th>Subtype</th>
+                        <td>Accessory</td>
+                    </tr>
+                    <tr>
+                        <th>Weight</th>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <th>Required Level</th>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <th>Adjective</th>
+                        <td>Fiddler's</td>
+                    </tr>
+                </table>
+            </div>
+        </article>
+
+        <article>
+            <img src="images/4141.png" alt="Evil Druid Card">
+            <div>
+                <h3>EVIL DRUID<span class="price">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$10</span></h3>
+                <button class="buy-button" type="button" onclick="buybutton()">Buy Now !</button>
+                <p> </p>
+                <ul class = "specs">
+                    <li>Changes the user to [Undead] element.</li>
+                    <li>Set bonus with Fallen Warrior Armor [1]:</li>
+                    <li>If upgrade level is +9 or higher,:</li>
+                    <li>Immune to Curse.</li>
+                </ul>
+                <table >
+                    <tr>
+                        <th>Type</th>
+                        <td>Normal Card</td>
+                    </tr>
+                    <tr>
+                        <th>Subtype</th>
+                        <td>Armor</td>
+                    </tr>
+                    <tr>
+                        <th>Weight</th>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <th>Required Level</th>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <th>Adjective</th>
+                        <td>Deadly</td>
+                    </tr>
+                </table>
+            </div>
+        </article>
+
+        <article>
+            <img src="images/4253.png" alt="Alice Card">
+            <div>
+                <h3>ALICE<span class="price">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$10</span></h3>
+                <button class="buy-button" type="button" onclick="buybutton()">Buy Now !</button>
+                <p> </p>
+                <ul class = "specs">
+                    <li>Reduces damage received from [Boss] monsters by 40%.</li>
+                    <li>Increases damage from normal monsters and players by 40%.</li>
+                </ul>
+                <table>
+                    <tr>
+                        <th>Type</th>
+                        <td>Normal Card</td>
+                    </tr>
+                    <tr>
+                        <th>Subtype</th>
+                        <td>Shield</td>
+                    </tr>
+                    <tr>
+                        <th>Weight</th>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <th>Required Level</th>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <th>Adjective</th>
+                        <td>of Royal Guard</td>
+                    </tr>
+                </table>
+            </div>
+        </article>
+
+        <article>
+            <img src="images/4320.png" alt="Bloody Knight Card">
+            <div>
+                <h3>BLOODY KNIGHT<span class="price">&nbsp;&nbsp;&nbsp;$10</span></h3>
+                <button class="buy-button" type="button" onclick="buybutton()">Buy Now !</button>
+                <p> </p>
+                <ul class = "specs">
+                    <li>Adds a 2% chance of using [Meteor Storm] Lv .1 on the target when doing a physical attack.</li>
+                </ul>
+                <table>
+                    <tr>
+                        <th>Type</th>
+                        <td>Normal Card</td>
+                    </tr>
+                    <tr>
+                        <th>Subtype</th>
+                        <td>Weapon</td>
+                    </tr>
+                    <tr>
+                        <th>Weight</th>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <th>Required Level</th>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <th>Adjective</th>
+                        <td>Meteoric</td>
+                    </tr>
+                </table>
+            </div>
+        </article>
+
+        <article>
+            <img src="images/4136.png" alt="Khalitzburg Card">
+            <div>
+                <h3>KHALITZBURG<span class="price">&nbsp;&nbsp;&nbsp;&nbsp;$10</span></h3>
+                <button class="buy-button" type="button" onclick="buybutton()">Buy Now !</button>
+                <p> </p>
+                <ul class = "specs">
+                    <li>Set bonus with Happy Shield [1]:</li>
+                    <li>Increases the experience given from [Demon] race monsters by 5%.</li>
+                    <li>If Happy Shield upgrade level is +6 or higher:</li>
+                    <li>Increases the experience given from [Demon] race monsters by an additional 5%.</li>
+                </ul>
+                <table>
+                    <tr>
+                        <th>Type</th>
+                        <td>Normal Card</td>
+                    </tr>
+                    <tr>
+                        <th>Subtype</th>
+                        <td>Shield</td>
+                    </tr>
+                    <tr>
+                        <th>Weight</th>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <th>Required Level</th>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <th>Adjective</th>
+                        <td>from Hell</td>
+                    </tr>
+                </table>
+            </div>
+        </article>
+
+        <article>
+            <img src="images/4254.png" alt="Ogre Tooth Card">
+            <div>
+                <h3>OGRE TOOTH<span class="price">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$10</span></h3>
+                <button class="buy-button" type="button" onclick="buybutton()">Buy Now !</button>
+                <p> </p>
+                <ul class = "specs">
+                    <li>Reduces damage received from [Medium] size enemies by 25%.</li>
+                </ul>
+                <table>
+                    <tr>
+                        <th>Type</th>
+                        <td>Normal Card</td>
+                    </tr>
+                    <tr>
+                        <th>Subtype</th>
+                        <td>Shield</td>
+                    </tr>
+                    <tr>
+                        <th>Weight</th>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <th>Required Level</th>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <th>Adjective</th>
+                        <td>Anti-Medium</td>
+                    </tr>
+                </table>
+            </div>
+        </article>
+        
+        <article>
+            <img src="images/4204.png" alt="Mini Demon Card">
+            <div>
+                <h3 class="c_title">MINI DEMON<span class="price">&nbsp;&nbsp;$4.20</span></h3>
+                <button class="buy-button" type="button" onclick="buybutton()">Buy Now !</button>
+                <p> </p>
+                <ul class = "specs">
+                    <li>Increases the experience given from [Brute] race monsters by 10%.</li>
+                    <li>Increases damage received from [Brute] race by 20%.</li>
+                </ul>
+                <table>
+                    <tr>
+                        <th>Type</th>
+                        <td>Normal Card</td>
+                    </tr>
+                    <tr>
+                        <th>Subtype</th>
+                        <td>Footgear</td>
+                    </tr>
+                    <tr>
+                        <th>Weight</th>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <th>Required Level</th>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <th>Adjective</th>
+                        <td>Poacher's</td>
+                    </tr>
+                </table>
+            </div>
+        </article>
+
+        <article>
+            <img src="images/4300.png" alt="Chimera Card">
+            <div>
+                <h3>CHIMERA<span class="price">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$10</span></h3>
+                <button class="buy-button" type="button" onclick="buybutton()">Buy Now !</button>
+                <p> </p>
+                <ul class = "specs">
+                    <li>Adds a 3% chance of inflicting [Poison] on the attacker when physically attacked.</li>
+                    <li>If used by an Assassin job type, chance is increased to 6%.</li>
+                </ul>
+                <table>
+                    <tr>
+                        <th>Type</th>
+                        <td>Normal Card</td>
+                    </tr>
+                    <tr>
+                        <th>Subtype</th>
+                        <td>Armor</td>
+                    </tr>
+                    <tr>
+                        <th>Weight</th>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <th>Required Level</th>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <th>Adjective</th>
+                        <td>Venomous Charge</td>
+                    </tr>
+                </table>
+            </div>
+        </article>
+
+        <article>
+            <img src="images/4187.png" alt="Raydric Archer Card">
+            <div>
+                <h3>RAYDRIC ARCHER<span class="price">&nbsp;$5.25</span></h3>
+                <button class="buy-button" type="button" onclick="buybutton()">Buy Now !</button>
+                <p> </p>
+                <ul class = "specs">
+                    <li>Set bonus with Book of Soyga [1]:</li>
+                    <li>Increases the experience given from [Demon] race monsters by 5%.</li>
+                    <li>If Book of Soyga upgrade level is +6 or higher:</li>
+                    <li>Increases the experience given from [Demon] race monsters by an additional 5%.</li>
+                </ul>
+                <table>
+                    <tr>
+                        <th>Type</th>
+                        <td>Normal Card</td>
+                    </tr>
+                    <tr>
+                        <th>Subtype</th>
+                        <td>Accessory</td>
+                    </tr>
+                    <tr>
+                        <th>Weight</th>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <th>Required Level</th>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <th>Adjective</th>
+                        <td>of the Spooky Night</td>
+                    </tr>
+                </table>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <p>
+          <a href="index.html">
+            <img
+              src="images/Diamond_Dogs.svg"
+              alt="add paladin in-game image here!"
+              width="60"
+            >
+          </a>
+        </p>
+        <!-- Navigation links in the footer -->
+        <nav>
+          <a href="contact.html" title="Read our Privacy Policy">Contact</a>
+          | <a href="about.html" title="Contact Support">About Us</a><br>
+          💎 Diamond Dogs 💎
+        </nav>
+    </footer>
+    <!-- javascript for button -->
+    <script src="script/carousel.js"></script>
+</body>
+</html>
